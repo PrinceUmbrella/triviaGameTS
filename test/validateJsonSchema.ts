@@ -1,4 +1,4 @@
-import * as file from "./questionsInput.json";
+import * as file from "../questionsInput.json";
 
 function main() {
     let userInput: any = file;
