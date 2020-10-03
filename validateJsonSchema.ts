@@ -1,16 +1,20 @@
 import * as file from "./questionsInput.json";
-import * as jsonSchema from "./jsonSchema";
-import * as schema from "./schema.json";
-import Ajv from "ajv";
-import { type } from "os";
 
 function main() {
     let userInput: any = file;
-    // const final: jsonSchema.Question[] = userInput.questionsList[0].questions;
-    // console.log(final);
 
     if (checkRootList(file)) {
-        console.log(1);
+        console.log("");
+        console.log("############################");
+        console.log("--> Correct Input");
+        console.log("############################");
+        console.log("");
+    } else {
+        console.log("");
+        console.log("############################");
+        console.log("--> Missing or Incorrect Input");
+        console.log("############################");
+        console.log("");
     }
 }
 
@@ -21,7 +25,6 @@ function checkRootList(rootList: any): Boolean {
     }
     const userQuestions: any = rootList.questionsList;
     for (let i = 0; i < userQuestions.length; i++) {
-        // console.log(userQuestions[i], typeof userQuestions[i]);
         if (!checkQuestionsList(userQuestions[i])) {
             return false;
         }
