@@ -29,7 +29,23 @@
                     "options": ["1", "2", "3", "Answer"],
                     "answer": "Answer",
                     "worth": 2
-                }
+                },
+                { 
+                    "question": "What date was Spelman founded?",
+                    "options": [ "February 14, 1867", "March 17, 2005", "June 29, 2000", "April 11, 1881"],
+                    "answer": "April 11, 1881",
+                    "worth": 2
+                },
+                          
+                          {
+                              "question": " Which President is the Spelman Suites named after?",
+                              "options": [ "Johnetta Betsch Cole", "Desiree Pedescleaux", " DeKimberlen Neely", "Beverly Daniel Tatum"],
+                              "answer": "Beverly Daniel Tatum",
+                              "worth": 2
+                          },
+                          
+                              
+                          
             ]
 
         }
