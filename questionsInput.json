@@ -44,6 +44,31 @@
                               "worth": 2
                           },
                           
+                          {
+                              "question": "Which of the following is not a major Atlanta Highway?",
+                              "options": [ "285", "85", "75", "826"],
+                              "answer": "826",
+                              "worth": 2
+                          },
+                          
+                          {
+                          
+                          "question": "Which of the following was never the name of Georgia's capital city?"
+                          "options": [ "Savannah", "Augusta", "Louisville", "Tampa"],
+                          "answer": "Tampa"
+                          "worth": 2
+                          },
+                          
+                          { 
+                              "question": "Which music artist/group did not originate in Atlanta?"
+                              "options": [ "Outkast", "Ying Yang Twins", "Ludacris", "City Girls" ]
+                              "answer": "City Girls"
+                              "worth": 2
+                          }
+                        
+              
+                       
+            
                               
                           
             ]
