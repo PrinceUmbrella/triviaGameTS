@@ -1,37 +1,359 @@
 {
     "questionsList": [{
-            "category": "History of Morehouse",
-            "questions": [{
-                    "question": "The qusetion",
-                    "options": ["1", "2", "3", "Answer"],
-                    "answer": "Answer",
+            "category": "Computers",
+            "questions": [
+                {
+                    "question": "The internet domain .fm is the country-code top-level domain for which Pacific Ocean island nation?",
+                    "options": ["Micronesia","Fiji", "Tuvalu", "Marshall Islands"],
+                    "answer": "Micronesia",
+                    "worth": 5
+                },
+                {
+                    "question": "On Twitter, what is the character limit for a Tweet?",
+                    "options": ["120","140","280", "140"],
+                    "answer": "280",
+                    "worth": 1
+                },
+                {
+                    "question": "The HTML5 standard was published in 2014.",
+                    "options": ["True", "False"],
+                    "answer": "True",
                     "worth": 2
                 },
                 {
-                    "question": "The qusetion",
-                    "options": ["1", "2", "3", "Answer"],
-                    "answer": "Answer",
+                    "question": "Which of the following languages is used as a scripting language in the Unity 3D game engine?",
+                    "options": ["Java","C++","C#","Objective-C"],
+                    "answer": "C#",
+                    "worth": 3
+                },
+                {
+                    "question":  "How long is an IPv6 address?",
+                    "options": ["128 bits", "32 bits", "64bits", "256 bits"],
+                    "answer": "128 bits",
+                    "worth": 4
+                },
+                {
+                    "question": "The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called:",
+                    "options": ["HD Graphics 700 ","HD Graphics 600", "HD Graphics 7000", "HD Graphics 500"],
+                    "answer": "HD Graphics 500",
+                    "worth": 2
+                },
+                {
+                    "question": "Which programming language was developed by Sun Microsystems in 1995?",
+                    "options": ["Java", "Python", "Solaris OS", "C++"],
+                    "answer": "Java",
+                    "worth": 1
+                },
+                {
+                    "question": "Which of these is the name for the failed key escrow device introduced by the National Security Agency in 1993?",
+                    "options": ["Enigma Machine","Skipjack","Nautilus", "Clipper Chip"],
+                    "answer": "Clipper Chip",
+                    "worth": 2
+                },
+                {
+                    "question": "What was the name given to Android 4.3?",
+                    "options": ["Lollipop","Nutella","Froyo", "Jelly Bean"],
+                    "answer": "Jelly Bean",
+                    "worth": 5
+                },
+                {
+                    "question": "How many values can a single byte represent?",
+                    "options": ["256","8","1", "1024"],
+                    "answer": "256",
+                    "worth": 1
+                },
+                {
+                    "question": "Unix Time is defined as the number of seconds that have elapsed since when?",
+                    "options": ["Midnight, July 4, 1976","Midnight on the creator of Unix's birthday","Midnight, July 4, 1980", "Midnight, January 1, 1970"],
+                    "answer": "Midnight, January 1, 1970",
+                    "worth": 3
+                },
+                {
+                    "question": "The most graphically violent game to precede the creation of the ESRB (Entertainment Software Rating Board) was...",
+                    "options": ["Mortal Kombat", "Duke Nukem","Resident Evil", "Doom"],
+                    "answer": "Mortal Kombat",
                     "worth": 2
                 }
             ]
 
         },
         {
-            "category": "History of Spelman",
-            "questions": [{
-                    "question": "The qusetion",
-                    "options": ["1", "2", "3", "Answer"],
-                    "answer": "Answer",
+            "category": "Mathematics",
+            "questions": [
+                {
+                    "question": "How is the number 9 represented as a binary number?",
+                    "options": ["1001", "1000", "1110", "1010"],
+                    "answer": "1001",
                     "worth": 2
                 },
                 {
-                    "question": "The qusetion",
-                    "options": ["1", "2", "3", "Answer"],
-                    "answer": "Answer",
-                    "worth": 2
+                    "question": "What prime number comes next after 19?",
+                    "options": ["27", "23", "25", "21"],
+                    "answer": "23",
+                    "worth": 1
+                },
+                {
+                    "question": "How many sides does a heptagon have?",
+                    "options": ["7", "8", "5", "6"],
+                    "answer": "7",
+                    "worth": 1
+                },
+                {
+                    "question": "Which of the following mathematicians made major contributions to game theory?",
+                    "options": ["John Von Neumann","Carl Friedrich Gauss", "Leonhard Euler", "Stefan Banach"],
+                    "answer": "John Von Neumann",
+                    "worth": 3
+                },
+                {
+                    "question": "Which of the following famous mathematicians died in a duel at the age of 20?",
+                    "options": ["Galois","Abel", "Euler", "Gauss"],
+                    "answer": "Galois",
+                    "worth": 3
                 }
             ]
 
+        },
+        {
+            "category": "Mythology",
+            "questions": [
+                {
+                    "question":"Who was the Roman god of fire?",
+                    "options": ["Vulcan", "Apollo","Jupiter","Mercury"],
+                    "answer": "Vulcan",
+                    "worth": 3
+                },
+                {
+                    "question": "Which Greek & Roman god was known as the god of music, truth and prophecy, healing, the sun and light, plague, poetry, and more?",
+                    "options": ["Apollo", "Aphrodite", "Artemis", "Athena"],
+                    "answer": "Apollo",
+                    "worth": 1
+                },
+                {
+                    "question": "Nidhogg is a mythical creature from what mythology?",
+                    "options": ["Norse", "Egyptian","Greek", "Hindu"],
+                    "answer": "Norse",
+                    "worth": 4
+                },
+                {
+                    "question": "In Greek mythology, who is the god of wine?",
+                    "options": ["Dionysus","Hephaestus", "Demeter", "Apollo"],
+                    "answer": "Dionysus",
+                    "worth": 2
+                },
+                {
+                    "question": "In African mythology, Anansi is a trickster and storyteller who takes the shape of which animal?",
+                    "options": ["Spider","Wild dog", "Monkey", "Crocodile"],
+                    "answer": "Spider",
+                    "worth": 3
+                },
+                {
+                    "question": "Who is the Egyptian god of reproduction and lettuce?",
+                    "options": [
+                        "Menu",
+                        "Mut",
+                        "Meret",
+                        "Min"
+                        ],
+                    "answer": "Min",
+                    "worth": 2
+                },
+                {
+                    "question": "Who is a minor god that is protector and creator of various arts, such as cheese making and bee keeping.",
+                    "options": [
+                        "Autonoe",
+                        "Carme",
+                        "Aristaeus",
+                        "Cephisso"
+                        ],
+                    "answer": "Aristaeus",
+                    "worth": 3
+                },
+                {
+                    "question": "Hera is god of...",
+                    "options": [
+                        "Agriculture",
+                        "Sea",
+                        "War",
+                        "Marriage"
+                        ],
+                    "answer": "Marriage",
+                    "worth": 2
+                },
+                {
+                    "question": "A minotaur is half human half what?",
+                    "options": [
+                        "Cow",
+                        "Horse",
+                        "Eagle",
+                        "Bull"
+                        ],
+                    "answer": "Bull",
+                    "worth": 1
+                }
+            ]
+
+        },
+        {
+            "category": "Science",
+            "questions": [
+                {
+                    "question":"What nucleotide pairs with guanine?",
+                    "options": ["Cytosine", "Thymine","Adenine","Uracil"],
+                    "answer": "Cytosine",
+                    "worth": 3
+                },
+                {
+                    "question": "What is the scientific name for the extinct hominin known as 'Lucy'?",
+                    "options": ["Australopithecus Afarensis", "Australopithecus Africanus", "Australopithecus Architeuthis", "Australopithecus Antaris"],
+                    "answer": "Australopithecus Afarensis",
+                    "worth": 5
+                },
+                {
+                    "question": "Where is the scientific name for the extinct hominin known as 'Lucy' was found?",
+                    "options": ["Ethiopia", "Somalia", "Australia", "Yemen"],
+                    "answer": "Ethiopia",
+                    "worth": 4
+                },
+                {
+                    "question": "The 'Tibia' is found in which part of the body?",
+                    "options": ["Leg","Arm", "Hand", "Head"],
+                    "answer": "Leg",
+                    "worth": 2
+                },
+                {
+                    "question": "What are human nails made of?",
+                    "options": ["Keratin","Bone", "Chitin", "Calcium"],
+                    "answer": "Keratin",
+                    "worth": 1
+                }
+            ]
+
+        },
+        {
+            "category": "Geography",
+            "questions": [
+                {
+                    "question":"What is the largest non-continental island in the world?",
+                    "options": ["New Guinea","Borneo", "Madagascar","Greenland"],
+                    "answer": "Greenland",
+                    "worth": 3
+                },
+                {
+                    "question": "Which is the world's longest river?",
+                    "options": [
+                        "Missouri",
+                        "Amazon",
+                        "Nile",
+                        "Yangtze"
+                        ],
+                    "answer": "Nile",
+                    "worth": 1
+                },
+                {
+                    "question": "Which is not a country in Africa?",
+                    "options":[
+                        "Senegal",
+                        "Liberia",
+                        "Somalia",
+                        "Guyana"
+                        ],
+                    "answer": "Guyana",
+                    "worth": 3
+                },
+                {
+                    "question": "What year is on the flag of the US state Wisconsin?",
+                    "options": [
+                        "1634",
+                        "1783",
+                        "1901",
+                        "1848"
+                        ],
+                    "answer": "1848",
+                    "worth": 4
+                },
+                {
+                    "question": "What is the capital of Mauritius?",
+                    "options":  [
+                        "Port Moresby",
+                        "Port Vila",
+                        "Port-au-Prince",
+                        "Port Louis"
+                        ],
+                    "answer": "Port Louis",
+                    "worth": 2
+                },
+                {
+                    "question": "What is the capital city of Mongolia",
+                    "options":  [
+                        "Ulaanbaatar",
+                        "Tashkent",
+                        "Bishkek",
+                        "Kabul"
+                        ],
+                    "answer": "Ulaanbaatar",
+                    "worth": 3
+                }
+            ]
+        },
+        {
+            "category": "History",
+            "questions": [
+                {
+                    "question":"During the Roman Triumvirate of 42 BCE, what region of the Roman Republic was given to Lepidus?",
+                    "options": [
+                        "Italia",
+                        "Gallia",
+                        "Asia",
+                        "Hispania"
+                        ],
+                    "answer": "Hispania",
+                    "worth": 3
+                },
+                {
+                    "question": "When did the United States formally declare war on Japan, entering World War II?",
+                    "options": [
+                        "June 6, 1944",
+                        "June 22, 1941",
+                        "September 1, 1939",
+                        "December 8, 1941"
+                        ],
+                    "answer": "December 8, 1941",
+                    "worth": 2
+                },
+                {
+                    "question": "What is the historical name of Sri Lanka?",
+                    "options":[
+                        "Myanmar",
+                        "Colombo",
+                        "Badulla",
+                        "Ceylon"
+                        ],
+                    "answer": "Ceylon",
+                    "worth": 2
+                },
+                {
+                    "question": "What year is on the flag of the US state Wisconsin?",
+                    "options": [
+                        "1634",
+                        "1783",
+                        "1901",
+                        "1848"
+                        ],
+                    "answer": "1848",
+                    "worth": 4
+                },
+                {
+                    "question": "What nationality was sultan Saladin?",
+                    "options":  [
+                        "Arab",
+                        "Egyptian",
+                        "Syrian",
+                        "Kurdish"
+                        ],
+                    "answer": "Kurdish",
+                    "worth": 2
+                }
+            ]
         }
     ]
 
