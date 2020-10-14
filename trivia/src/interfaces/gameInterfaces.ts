@@ -13,3 +13,8 @@ export interface QuestionList {
 export interface RootInput {
     questionsList: QuestionList[];
 }
+
+export interface Player{
+    name: string;
+    score: number;
+}
