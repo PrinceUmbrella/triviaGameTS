@@ -5,13 +5,13 @@ export interface Question {
     worth: number;
 }
 
-export interface QuestionList {
+export interface Category {
     category: string;
     questions: Question[];
 }
 
 export interface RootInput {
-    questionsList: QuestionList[];
+    questionsList: Category[];
 }
 
 export interface Player{

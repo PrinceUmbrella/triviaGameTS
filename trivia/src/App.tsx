@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Score from './components/Score';
-import Questions from './components/Questions';
-
+import Game from './components/Game';
+import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
+import InputHandler from './components/InputHandler';
+ 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Score/>
-        <Questions/>
-      </header>
-    </div>
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Switch>
+                    <Route path="/home" component={() => <Game />} />
+                    <Route exact path="/input" component={() => <InputHandler />} />
+                    <Redirect to="/home" />
+                </Switch>
+                    <Game/>
+            </div>
+        </BrowserRouter>
+
   );
 }
 

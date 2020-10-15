@@ -1,12 +1,19 @@
 import React, {useState, useEffect} from 'react';
+import {Question} from '../interfaces/gameInterfaces';
 
-function Questions() {
-  return (
-    <div className="App">
-
-      <h1>Questions</h1>
-    </div>
-  );
+interface questionsInput{
+    onClick: () => void;
+    question: Question;
 }
 
-export default Questions;
+function QuestionsDisplay(props?:any) {
+
+    return (
+        <div className="App">
+            
+        <h1>Questions</h1>
+        </div>
+    );
+}
+
+export default QuestionsDisplay;
