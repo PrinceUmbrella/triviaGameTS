@@ -10,7 +10,6 @@ function App() {
             <div className="App">
                 <Switch>
                     <Route path="/home" component={() => <Game />} />
-                    <Route exact path="/input" component={() => <InputHandler />} />
                     <Redirect to="/home" />
                 </Switch>
                     <Game/>
