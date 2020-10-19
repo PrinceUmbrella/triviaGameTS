@@ -1,21 +1,17 @@
-import React, { useState } from 'react';
-import {Question} from '../interfaces/gameInterfaces';
-import {
-  Jumbotron,
-  Button,
-  Container
-} from 'reactstrap';
-import { useDispatch } from 'react-redux';
-import { moveToNextQuestion } from '../redux/action';
+import React, { useState } from "react";
+import { Question } from "../interfaces/gameInterfaces";
+import { Jumbotron, Button, Container } from "reactstrap";
+import { useDispatch } from "react-redux";
+import { moveToNextQuestion } from "../redux/action";
 
-interface questionsInput{
+interface questionsInput {
     onClick: () => void;
     question: Question;
 }
 
-function QuestionsDisplay(props?:any) {
-    const question: Question = props.question; 
-    const[rSelected, setRSelected] = useState<string>();
+function QuestionsDisplay(props?: any) {
+    const question: Question = props.question;
+    const [rSelected, setRSelected] = useState<string>();
     let dispatch = useDispatch();
     let countt = 0;
     const buttonClicked = () => {
@@ -25,24 +21,35 @@ function QuestionsDisplay(props?:any) {
 
     return (
         <div>
-             <Jumbotron fluid >
+            <Jumbotron fluid>
                 <Container fluid>
                     <p>{question.question}</p>
                 </Container>
             </Jumbotron>
-            {
-                question.options.map((option) => {
-                    countt++;
-                    return(
-                        <Button color="secondary" size="lg" onClick={() => setRSelected(option)} active={rSelected === option} block>{option}</Button>
-                    );
-                })
-            }
+            {question.options.map((option) => {
+                countt++;
+                return (
+                    <Button
+                        color="secondary"
+                        size="lg"
+                        onClick={() => setRSelected(option)}
+                        active={rSelected === option}
+                        block
+                    >
+                        {option}
+                    </Button>
+                );
+            })}
             <p>Selected: {rSelected}</p>
-            <Button color="primary" size="lg" onClick={() => buttonClicked()} block>Submit Answer</Button>
+            <Button
+                color="primary"
+                size="lg"
+                onClick={() => buttonClicked()}
+                block
+            >
+                Submit Answer
+            </Button>
         </div>
-
-            
     );
 }
 
