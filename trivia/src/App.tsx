@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import * as acc from './redux/action';
 import { compose, createStore } from 'redux';
 import { playReducer } from './redux/reducer';
+import InputHandler from './components/InputHandler';
 
 declare global {
     interface Window {
@@ -17,26 +18,24 @@ declare global {
 const composeEnhancers = (window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()) || compose;
 const store = createStore(playReducer, composeEnhancers);
 
-console.log(store.getState());
-store.dispatch(acc.playerName(1,"leo"));
-
-const App= () => {
+function App() {
     return (
         <div>
             <Provider store={store}>
                 <BrowserRouter>
-                    <Container style={{ marginTop:100 }}>
+                    <Container style={{ marginTop: 100 }}>
                         <Switch>
-                            <Route path="/home" component={() => <Game />} />
-                            <Redirect to="/home" />
+                            <Route path="/input" component={InputHandler} />
+                            <Route path="/home" component={Game} />
+                            <Redirect to="/input" />
                         </Switch>
-                    </Container> 
+                    </Container>
                 </BrowserRouter>
             </Provider>
         </div>
 
 
-  );
+    );
 }
 
 export default App;
