@@ -18,7 +18,6 @@ const composeEnhancers = (window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_
 const store = createStore(playReducer, composeEnhancers);
 
 console.log(store.getState());
-const unsubscribe = store.subscribe(() => console.log(store.getState()));
 store.dispatch(acc.playerName(1,"leo"));
 
 const App= () => {

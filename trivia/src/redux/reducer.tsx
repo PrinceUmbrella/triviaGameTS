@@ -1,21 +1,21 @@
 import * as GameActions from './action';
 //import { combineReducers } from 'redux';
-const initalState =[
-    {
+const initalState ={
+    players: [{
         name: '',
         score: 0
     },
     {
         name: '',
         score: 0
-    }
-];
+    }]
+};
 
 export function playReducer(state:any = initalState, action:any){
 
     switch(action.type){
         case GameActions.UPDATE_SCORE:
-            const updatePlayerList = state.map((player: any, index: any) => {
+            const updatePlayerList = state.players.map((player: any, index: any) => {
                 if(index === action.index) {
                     return {
                         ...player,
@@ -25,10 +25,11 @@ export function playReducer(state:any = initalState, action:any){
                 return player;
             });
             return {
-                ...updatePlayerList
+                ...state,
+                players: updatePlayerList
             }
         case GameActions.ADD_PLAYER:
-            const updatePlayerName = state.map((player: any, index: any) => {
+            const updatePlayerName = state.players.map((player: any, index: any) => {
                 if(index === action.index) {
                     return {
                         ...player,
@@ -38,7 +39,8 @@ export function playReducer(state:any = initalState, action:any){
                 return player;
             });
             return {
-                ...updatePlayerName
+                ...state,
+                players: updatePlayerName
             }
         case GameActions.SELECT_PLAYER:
             return {      

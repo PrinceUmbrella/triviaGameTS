@@ -22,9 +22,9 @@ function Game() {
 
     return (
         <Container>
-            <InputHandler/>
-            <QuestionsDisplay question={allQuestion[counter]} onClick={setCurrentAnswer}/>
+            {/* <InputHandler/> */}
             <Score/>
+            <QuestionsDisplay question={allQuestion[counter]} onClick={setCurrentAnswer}/>
             <p>Final Selected: {currentAnswer}</p>
         </Container>
 
