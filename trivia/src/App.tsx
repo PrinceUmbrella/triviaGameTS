@@ -18,27 +18,24 @@ declare global {
 const composeEnhancers = (window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()) || compose;
 const store = createStore(playReducer, composeEnhancers);
 
-console.log(store.getState());
-store.dispatch(acc.playerName(1,"leo"));
-
-const App= () => {
+function App() {
     return (
         <div>
             <Provider store={store}>
                 <BrowserRouter>
-                    <Container style={{ marginTop:100 }}>
+                    <Container style={{ marginTop: 100 }}>
                         <Switch>
                             <Route path="/input" component={InputHandler} />
                             <Route path="/home" component={Game} />
                             <Redirect to="/input" />
                         </Switch>
-                    </Container> 
+                    </Container>
                 </BrowserRouter>
             </Provider>
         </div>
 
 
-  );
+    );
 }
 
 export default App;

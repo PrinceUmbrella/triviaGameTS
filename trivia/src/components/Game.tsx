@@ -21,6 +21,7 @@ function Game() {
     return (
         <Container>
             <Score/>
+            <br/>
             <QuestionsDisplay question={allQuestion[currentQuestion]} onClick={setCurrentAnswer}/>
             <p>Final Selected: {currentAnswer}</p>
         </Container>
