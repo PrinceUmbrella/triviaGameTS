@@ -52,7 +52,7 @@ function Game() {
 function getLevelQuestion(questionList: Question[], level: number): Question[] {
     let levelList: Question[] = [];
     questionList.map((x: Question) => {
-        if (x.worth == level) {
+        if (x.worth === level) {
             levelList = [...levelList, x];
         }
     });

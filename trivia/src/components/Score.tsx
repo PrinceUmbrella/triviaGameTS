@@ -5,7 +5,6 @@ import { updateScore } from "../redux/action";
 
 function Score() {
     let currentValue: any = useSelector((state) => state);
-    console.log(currentValue);
     let dispatch = useDispatch();
 
     return (
