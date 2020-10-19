@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Question} from '../interfaces/gameInterfaces';
 import {
   Jumbotron,
@@ -15,11 +15,7 @@ interface questionsInput{
 
 function QuestionsDisplay(props?:any) {
     const question: Question = props.question; 
-    let rSelected: any = null;
-
-    const setRSelected = (answer:any) => {
-        rSelected = answer;
-    }
+    const[rSelected, setRSelected] = useState<string>();
     let countt = 0;
     return (
         <div>
