@@ -24,11 +24,17 @@ function Game() {
         (x: Category) => (allQuestion = [...allQuestion, ...x.questions])
     );
 
-    const levelOne: Question[] = getLevelQuestion(allQuestion, 1);
-    const levelTwo: Question[] = getLevelQuestion(allQuestion, 2);
-    const levelThree: Question[] = getLevelQuestion(allQuestion, 3);
-    const levelFour: Question[] = getLevelQuestion(allQuestion, 4);
-    const levelFive: Question[] = getLevelQuestion(allQuestion, 5);
+    const levelOne: Question[] = shuffleArray(getLevelQuestion(allQuestion, 1));
+    const levelTwo: Question[] = shuffleArray(getLevelQuestion(allQuestion, 2));
+    const levelThree: Question[] = shuffleArray(
+        getLevelQuestion(allQuestion, 3)
+    );
+    const levelFour: Question[] = shuffleArray(
+        getLevelQuestion(allQuestion, 4)
+    );
+    const levelFive: Question[] = shuffleArray(
+        getLevelQuestion(allQuestion, 5)
+    );
 
     // console.log(levelOne);
     // console.log(levelTwo);
@@ -60,4 +66,11 @@ function getLevelQuestion(questionList: Question[], level: number): Question[] {
     return levelList;
 }
 
+function shuffleArray(array: Question[]) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 export default Game;
