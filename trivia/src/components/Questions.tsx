@@ -5,6 +5,8 @@ import {
   Button,
   Container
 } from 'reactstrap';
+import { useDispatch } from 'react-redux';
+import { moveToNextQuestion } from '../redux/action';
 // import {score} from '../redux/action';
 
 interface questionsInput{
@@ -16,7 +18,15 @@ interface questionsInput{
 function QuestionsDisplay(props?:any) {
     const question: Question = props.question; 
     const[rSelected, setRSelected] = useState<string>();
+    let dispatch = useDispatch();
     let countt = 0;
+    const buttonClicked = () => {
+        
+        props.onClick(rSelected);
+        dispatch(moveToNextQuestion());
+
+    };
+
     return (
         <div>
              <Jumbotron fluid>
@@ -33,7 +43,7 @@ function QuestionsDisplay(props?:any) {
                 })
             }
             <p>Selected: {rSelected}</p>
-            <Button color="primary" size="lg" onClick={() => {props.onClick(rSelected)}} block>Submit Answer</Button>
+            <Button color="primary" size="lg" onClick={() => buttonClicked()} block>Submit Answer</Button>
         </div>
 
             

@@ -8,7 +8,8 @@ const initalState ={
     {
         name: '',
         score: 0
-    }]
+    }],
+    currentQuestion: 0
 };
 
 export function playReducer(state:any = initalState, action:any){
@@ -42,10 +43,15 @@ export function playReducer(state:any = initalState, action:any){
                 ...state,
                 players: updatePlayerName
             }
-        case GameActions.SELECT_PLAYER:
-            return {      
-                ...state,        
-                selectedPlayerIndex: action.index
+        // case GameActions.SELECT_PLAYER:
+        //     return {      
+        //         ...state,        
+        //         selectedPlayerIndex: action.index
+        //     }
+        case GameActions.NEXT_QUESTION:
+            return {
+                ...state,
+                currentQuestion: state.currentQuestion + 1,
             }
         default:
             return state

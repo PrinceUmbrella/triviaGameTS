@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import * as acc from './redux/action';
 import { compose, createStore } from 'redux';
 import { playReducer } from './redux/reducer';
+import InputHandler from './components/InputHandler';
 
 declare global {
     interface Window {
@@ -27,8 +28,9 @@ const App= () => {
                 <BrowserRouter>
                     <Container style={{ marginTop:100 }}>
                         <Switch>
-                            <Route path="/home" component={() => <Game />} />
-                            <Redirect to="/home" />
+                            <Route path="/input" component={InputHandler} />
+                            <Route path="/home" component={Game} />
+                            <Redirect to="/input" />
                         </Switch>
                     </Container> 
                 </BrowserRouter>
