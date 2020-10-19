@@ -58,6 +58,11 @@ export function playReducer(state: any = initalState, action: any) {
                 ...state,
                 currentQuestion: state.currentQuestion + 1,
             };
+        case GameActions.SET_ANSWER:
+            return{
+                ...state, 
+                answer: action.answer, 
+            };
         default:
             return state;
     }

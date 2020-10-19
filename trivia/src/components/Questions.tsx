@@ -11,8 +11,10 @@ function QuestionsDisplay(props?: any) {
 
     const buttonClicked = () => {
         props.onClick(rSelected);
+        // TO-DO set points accordingly 
         dispatch(moveToNextQuestion());
     };
+
 
     return (
         <div>
@@ -47,7 +49,7 @@ function QuestionsDisplay(props?: any) {
                 </Button>
             ) : (
                 <Button color="primary" size="lg" disabled block>
-                    Submit Answer{" "}
+                    Choose Answer{" "}
                 </Button>
             )}
         </div>

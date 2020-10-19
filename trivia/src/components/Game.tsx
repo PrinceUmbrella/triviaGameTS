@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../App.css";
 import Score from "./Score";
 import QuestionsDisplay from "./Questions";
@@ -10,11 +10,13 @@ import {
     Player,
 } from "../interfaces/gameInterfaces";
 import { Container } from "reactstrap";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setAnswer } from "../redux/action";
 
 function Game() {
     const [currentAnswer, setCurrentAnswer] = useState<string>();
     const state: any = useSelector((state) => state);
+    const dispatch = useDispatch(); 
     let currentQuestion = state.currentQuestion;
 
     const jsonFormat: RootInput = questionList;
@@ -35,12 +37,14 @@ function Game() {
     const levelFive: Question[] = shuffleArray(
         getLevelQuestion(allQuestion, 5)
     );
+    
+    useEffect( ()=> {
+        const genAnswerKey = async () => {
+        dispatch(setAnswer(allQuestion[currentQuestion].answer));
+      };
+      genAnswerKey(); 
+    },[]);
 
-    // console.log(levelOne);
-    // console.log(levelTwo);
-    // console.log(levelThree);
-    // console.log(levelFour);
-    // console.log(levelFive);
 
     return (
         <Container>
