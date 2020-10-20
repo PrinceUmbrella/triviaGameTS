@@ -12,6 +12,7 @@ import {
 import { Container } from "reactstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { setAnswer } from "../redux/action";
+import Final from "./Final";
 
 function Game() {
     const [currentAnswer, setCurrentAnswer] = useState<string>();
@@ -41,12 +42,23 @@ function Game() {
 
     return (
         <Container>
-            <Score />
             <br />
-            <QuestionsDisplay
-                question={allQuestion[currentQuestion]}
-                onClick={setCurrentAnswer}
-            />
+            {state.currentQuestion === 10 ? 
+                <Final/>:
+                (
+                <div>
+                    <Score />
+                    <br/>
+                    <br/>
+                    <QuestionsDisplay
+                    question={allQuestion[currentQuestion]}
+                    onClick={setCurrentAnswer}
+                    />
+                    <br/>
+                    <br/>
+                </div>)
+            }
+
             <p>Final Selected: {currentAnswer}</p>
         </Container>
     );
