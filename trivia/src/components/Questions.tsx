@@ -27,7 +27,7 @@ function QuestionsDisplay(props?: any) {
                 )
             );
         }
-
+        setRSelected(undefined);
         dispatch(moveToNextQuestion());
     }
 
