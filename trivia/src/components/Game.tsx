@@ -38,13 +38,6 @@ function Game() {
         getLevelQuestion(allQuestion, 5)
     );
     
-    useEffect( ()=> {
-        const genAnswerKey = async () => {
-        dispatch(setAnswer(allQuestion[currentQuestion].answer));
-      };
-      genAnswerKey(); 
-    },[]);
-
 
     return (
         <Container>
