@@ -5,15 +5,12 @@ import QuestionsDisplay from "./Questions";
 import questionList from "../data/questionsInput.json";
 import { Question, Category, RootInput } from "../interfaces/gameInterfaces";
 import { Container, Jumbotron } from "reactstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import CheckAnswer from "./CheckAnswer";
-import { setAnswer } from "../redux/action";
 import Final from "./Final";
 
 function Game() {
-    const [currentAnswer, setCurrentAnswer] = useState<string>();
     const state: any = useSelector((state) => state);
-    const dispatch = useDispatch();
     let currentQuestion = state.currentQuestion;
 
     const jsonFormat: RootInput = questionList;

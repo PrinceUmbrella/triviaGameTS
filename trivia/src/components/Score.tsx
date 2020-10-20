@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Card, CardText, CardTitle, Col, Row } from "reactstrap";
-import { updateScore } from "../redux/action";
+import { Card, CardText, CardTitle, Col, Row } from "reactstrap";
 
 function Score() {
     let currentValue: any = useSelector((state) => state);
