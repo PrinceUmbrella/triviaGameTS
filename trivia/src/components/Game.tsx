@@ -42,15 +42,21 @@ function Game() {
 
     return (
         <Container>
-            <Score />
             <br />
             {state.currentQuestion === 10 ? 
                 <Final/>:
                 (
-                <QuestionsDisplay
-                question={allQuestion[currentQuestion]}
-                onClick={setCurrentAnswer}
-                />)
+                <div>
+                    <Score />
+                    <br/>
+                    <br/>
+                    <QuestionsDisplay
+                    question={allQuestion[currentQuestion]}
+                    onClick={setCurrentAnswer}
+                    />
+                    <br/>
+                    <br/>
+                </div>)
             }
 
             <p>Final Selected: {currentAnswer}</p>

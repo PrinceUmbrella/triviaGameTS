@@ -11,7 +11,7 @@ const initalState = {
             score: 0,
         },
     ],
-    currentQuestion: 0,
+    currentQuestion: 9,
     answer: "",
     playerAnswer: "",
 };
