@@ -9,24 +9,22 @@ function Score() {
 
     return (
         <div className="App">
-            <h1>Score</h1>
+            <h2>Score</h2>
             <Row>
                 <Col sm="6">
                     <Card body color="info">
-                        <CardTitle>{currentValue.players[0].score}</CardTitle>
-                        <CardText>{currentValue.players[0].name}</CardText>
-                        <Button onClick={() => dispatch(updateScore(0, 1))}>
-                            Go somewhere
-                        </Button>
+                        <CardTitle>
+                            <h3>{currentValue.players[0].name}</h3>
+                        </CardTitle>
+                        <CardText>{currentValue.players[0].score}</CardText>
                     </Card>
                 </Col>
                 <Col sm="6">
                     <Card body color="success">
-                        <CardTitle>{currentValue.players[1].score}</CardTitle>
-                        <CardText>{currentValue.players[1].name}</CardText>
-                        <Button onClick={() => dispatch(updateScore(1, 1))}>
-                            Go somewhere
-                        </Button>
+                        <CardTitle>
+                            <h3>{currentValue.players[1].name}</h3>
+                        </CardTitle>
+                        <CardText>{currentValue.players[1].score}</CardText>
                     </Card>
                 </Col>
             </Row>

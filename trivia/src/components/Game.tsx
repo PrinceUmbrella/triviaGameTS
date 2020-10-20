@@ -4,7 +4,7 @@ import Score from "./Score";
 import QuestionsDisplay from "./Questions";
 import questionList from "../data/questionsInput.json";
 import { Question, Category, RootInput } from "../interfaces/gameInterfaces";
-import { Container } from "reactstrap";
+import { Container, Jumbotron } from "reactstrap";
 import { useDispatch, useSelector } from "react-redux";
 import CheckAnswer from "./CheckAnswer";
 import { setAnswer } from "../redux/action";
@@ -35,14 +35,18 @@ function Game() {
         getLevelQuestion(allQuestion, 5)
     );
 
+    allQuestion = shuffleArray(allQuestion);
     return (
         <Container>
             {state.currentQuestion === 10 ? (
-                <Final />
+                <Jumbotron>
+                    <Container>
+                        <Final />
+                    </Container>
+                </Jumbotron>
             ) : (
                 <div>
                     <Score />
-                    <br />
                     <br />
                     {state.answer !== "" && state.currentAnswer !== "" ? (
                         <CheckAnswer />
@@ -50,16 +54,10 @@ function Game() {
                         <div></div>
                     )}
                     <br />
-                    <QuestionsDisplay
-                        question={allQuestion[currentQuestion]}
-                        onClick={setCurrentAnswer}
-                    />
-                    <br />
+                    <QuestionsDisplay question={allQuestion[currentQuestion]} />
                     <br />
                 </div>
             )}
-
-            <p>Final Selected: {currentAnswer}</p>
         </Container>
     );
 }
