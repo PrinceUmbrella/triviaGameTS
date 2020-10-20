@@ -49,10 +49,10 @@ function InputHandler() {
                         }
                         className="btn btn-primary"
                     >
-                        Start the game
+                        Start The Game
                     </Link>
                 ) : (
-                    <Button disabled>Start the game</Button>
+                    <Button disabled>Enter Player Names</Button>
                 )}
             </Jumbotron>
         </div>

@@ -12,6 +12,8 @@ const initalState = {
         },
     ],
     currentQuestion: 0,
+    answer:'',
+    playerAnswer:''
 };
 
 export function playReducer(state: any = initalState, action: any) {
@@ -58,6 +60,16 @@ export function playReducer(state: any = initalState, action: any) {
                 ...state,
                 currentQuestion: state.currentQuestion + 1,
             };
+        case GameActions.SET_ANSWER:
+            return{
+                ...state, 
+                answer: action.answer, 
+            };
+        case GameActions.SET_PLAYER_ANSWER:
+            return{
+                ...state,
+                playerAnswer: action.playerAnswer, 
+            }
         default:
             return state;
     }

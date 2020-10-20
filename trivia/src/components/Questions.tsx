@@ -1,18 +1,28 @@
 import React, { useState } from "react";
 import { Question } from "../interfaces/gameInterfaces";
 import { Jumbotron, Button, Container } from "reactstrap";
-import { useDispatch } from "react-redux";
-import { moveToNextQuestion } from "../redux/action";
+import { useDispatch, useSelector } from "react-redux";
+import { moveToNextQuestion, setAnswer, setPlayerAnswer, updateScore} from "../redux/action";
 
 function QuestionsDisplay(props?: any) {
     const question: Question = props.question;
     const [rSelected, setRSelected] = useState<string>();
     let dispatch = useDispatch();
-
-    const buttonClicked = () => {
+    const currentQuestionNum :any  = useSelector((state) => state);
+    async function buttonClicked(){
         props.onClick(rSelected);
+        // TO-DO set points accordingly 
+        dispatch(setPlayerAnswer(rSelected));
+        dispatch(setAnswer(question.answer)); 
+        if (rSelected == question.answer){
+            dispatch(
+                updateScore(
+                    currentQuestionNum.currentQuestion % 2,
+                    question.worth)); 
+        }
         dispatch(moveToNextQuestion());
     };
+
 
     return (
         <div>
@@ -47,7 +57,7 @@ function QuestionsDisplay(props?: any) {
                 </Button>
             ) : (
                 <Button color="primary" size="lg" disabled block>
-                    Submit Answer{" "}
+                    Choose Answer{" "}
                 </Button>
             )}
         </div>
