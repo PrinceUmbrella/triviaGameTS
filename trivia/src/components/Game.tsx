@@ -7,6 +7,8 @@ import { Question, Category, RootInput } from "../interfaces/gameInterfaces";
 import { Container } from "reactstrap";
 import { useDispatch, useSelector } from "react-redux";
 import CheckAnswer from "./CheckAnswer";
+import { setAnswer } from "../redux/action";
+import Final from "./Final";
 
 function Game() {
     const [currentAnswer, setCurrentAnswer] = useState<string>();
@@ -35,21 +37,29 @@ function Game() {
 
     return (
         <Container>
-            <Score />
-            <br />
-            <br />
-            {state.answer !== "" && state.currentAnswer !== "" ? (
-                <CheckAnswer />
+            {state.currentQuestion === 10 ? (
+                <Final />
             ) : (
-                <div></div>
+                <div>
+                    <Score />
+                    <br />
+                    <br />
+                    {state.answer !== "" && state.currentAnswer !== "" ? (
+                        <CheckAnswer />
+                    ) : (
+                        <div></div>
+                    )}
+                    <br />
+                    <QuestionsDisplay
+                        question={allQuestion[currentQuestion]}
+                        onClick={setCurrentAnswer}
+                    />
+                    <br />
+                    <br />
+                </div>
             )}
-            <QuestionsDisplay
-                question={allQuestion[currentQuestion]}
-                onClick={setCurrentAnswer}
-            />
 
-            <br />
-            <br />
+            <p>Final Selected: {currentAnswer}</p>
         </Container>
     );
 }
