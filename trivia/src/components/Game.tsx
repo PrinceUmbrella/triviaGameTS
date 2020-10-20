@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import "../App.css";
+import React from "react";
 import Score from "./Score";
 import QuestionsDisplay from "./Questions";
 import questionList from "../data/questionsInput.json";

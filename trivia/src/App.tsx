@@ -4,7 +4,6 @@ import Game from "./components/Game";
 import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
 import { Container } from "reactstrap";
 import { Provider } from "react-redux";
-import * as acc from "./redux/action";
 import { compose, createStore } from "redux";
 import { playReducer } from "./redux/reducer";
 import InputHandler from "./components/InputHandler";
