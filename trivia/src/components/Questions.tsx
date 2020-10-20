@@ -16,8 +16,6 @@ function QuestionsDisplay(props?: any) {
     const currentQuestionNum: any = useSelector((state) => state);
 
     async function buttonClicked() {
-        props.onClick(rSelected);
-        // TO-DO set points accordingly
         dispatch(setPlayerAnswer(rSelected));
         dispatch(setAnswer(question.answer));
 
@@ -36,7 +34,7 @@ function QuestionsDisplay(props?: any) {
     return (
         <div>
             <Jumbotron fluid>
-                <Container fluid>
+                <Container fluid align={"center"}>
                     <p>{question.question}</p>
                 </Container>
             </Jumbotron>
@@ -54,7 +52,7 @@ function QuestionsDisplay(props?: any) {
                     </Button>
                 );
             })}
-            <p>Selected: {rSelected}</p>
+
             {rSelected ? (
                 <Button
                     color="primary"

@@ -1,23 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../App.css";
 import Score from "./Score";
 import QuestionsDisplay from "./Questions";
 import questionList from "../data/questionsInput.json";
-import {
-    Question,
-    Category,
-    RootInput,
-    Player,
-} from "../interfaces/gameInterfaces";
-import { Container } from "reactstrap";
-import { useDispatch, useSelector } from "react-redux";
-import { setAnswer } from "../redux/action";
+import { Question, Category, RootInput } from "../interfaces/gameInterfaces";
+import { Container, Jumbotron } from "reactstrap";
+import { useSelector } from "react-redux";
+import CheckAnswer from "./CheckAnswer";
 import Final from "./Final";
 
 function Game() {
-    const [currentAnswer, setCurrentAnswer] = useState<string>();
     const state: any = useSelector((state) => state);
-    const dispatch = useDispatch(); 
     let currentQuestion = state.currentQuestion;
 
     const jsonFormat: RootInput = questionList;
@@ -38,28 +31,30 @@ function Game() {
     const levelFive: Question[] = shuffleArray(
         getLevelQuestion(allQuestion, 5)
     );
-    
 
+    allQuestion = shuffleArray(allQuestion);
     return (
         <Container>
-            <br />
-            {state.currentQuestion === 10 ? 
-                <Final/>:
-                (
+            {state.currentQuestion === 10 ? (
+                <Jumbotron>
+                    <Container>
+                        <Final />
+                    </Container>
+                </Jumbotron>
+            ) : (
                 <div>
                     <Score />
-                    <br/>
-                    <br/>
-                    <QuestionsDisplay
-                    question={allQuestion[currentQuestion]}
-                    onClick={setCurrentAnswer}
-                    />
-                    <br/>
-                    <br/>
-                </div>)
-            }
-
-            <p>Final Selected: {currentAnswer}</p>
+                    <br />
+                    {state.answer !== "" && state.currentAnswer !== "" ? (
+                        <CheckAnswer />
+                    ) : (
+                        <div></div>
+                    )}
+                    <br />
+                    <QuestionsDisplay question={allQuestion[currentQuestion]} />
+                    <br />
+                </div>
+            )}
         </Container>
     );
 }
