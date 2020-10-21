@@ -1,12 +1,12 @@
 import React from "react";
 import "../App.css";
 import { useSelector } from "react-redux";
-import { Badge, Card, CardText, CardTitle, Col, Row } from "reactstrap";
+import { Badge, Card, CardText, CardTitle } from "reactstrap";
 
 function Score() {
     let currentValue: any = useSelector((state) => state);
-    let playerOne = currentValue.currentQuestion % 2 == 0 ? "danger" : "";
-    let playerTwo = currentValue.currentQuestion % 2 != 0 ? "danger" : "";
+    let playerOne = currentValue.currentQuestion % 2 === 0 ? "danger" : "";
+    let playerTwo = currentValue.currentQuestion % 2 !== 0 ? "danger" : "";
     return (
         <div className="App">
             <Card body color={playerOne}>
@@ -41,7 +41,7 @@ function Score() {
             <Card body color="warning">
                 <CardText>
                     <h1>
-                        <Badge color="secondary" center>
+                        <Badge color="secondary">
                             Level{" "}
                             {(currentValue.currentQuestion % 2
                                 ? ((currentValue.currentQuestion - 1) / 2) % 5
