@@ -3,7 +3,7 @@ import Score from "./Score";
 import QuestionsDisplay from "./Questions";
 import questionList from "../data/questionsInput.json";
 import { Question, Category, RootInput } from "../interfaces/gameInterfaces";
-import { Container, Jumbotron } from "reactstrap";
+import { Container, Jumbotron, Progress } from "reactstrap";
 import { useSelector } from "react-redux";
 import CheckAnswer from "./CheckAnswer";
 import Final from "./Final";
@@ -34,6 +34,7 @@ function Game() {
     allQuestion = shuffleArray(allQuestion);
     return (
         <Container>
+            <Progress value={state.currentQuestion * 10} />
             {state.currentQuestion === 10 ? (
                 <Jumbotron>
                     <Container>
