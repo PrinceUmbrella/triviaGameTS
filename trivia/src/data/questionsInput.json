@@ -99,9 +99,178 @@
                     ],
                     "answer": "Mortal Kombat",
                     "worth": 2
-                }
-            ]
-        },
+                },
+                
+                {
+                     
+                     "question": "What is the name given to layer 4 of the Open Systems Interconnection (ISO) model?",
+                     "options": [
+                     "Session",
+                     "Data link",
+                     "Network",
+                     "Transport"
+                   ],
+                   "answer": "Transport",
+                    "worth": 5
+        
+                 },
+              {
+
+                 "question": "What was the first company to use the term 'Golden Master'?",
+                  "options": [
+                  "IBM",
+                  "Microsoft",
+                  "Google",
+                  "Apple"    
+                  ],
+                  "answer": "Apple",
+                  "worth": 5
+               },
+        {
+            
+             "question": "Who is the founder of Palantir?",
+             "options": [
+             "Mark Zuckerberg",
+             "Marc Benioff",
+             "Peter Thiel",
+             "Jack Dorsey"
+              ],
+            "answer":"Peter Thiel",
+            "worth": 5
+           },
+        
+        {
+            "question": "What five letter word is the motto of the IBM Computer company?",
+            "options": [
+            "Click",
+            "Think",
+            "Logic",
+            "Pixel"
+           ],
+            "answer":"Think",
+            "worth":4
+           },
+        
+        {
+
+             "question": "What is the number of keys on a standard Windows Keyboard?",
+             "options": [
+             "64",
+             "94",
+             "104",
+             "76"
+               ],
+            "answer":"104",
+            "worth":4
+             },
+        
+          {
+   
+              "question": "In the server hosting industry IaaS stands for...",
+              "options": [
+              "Internet as a Service",
+              "Infrastructure as a Service",
+              "Internet and a Server",
+              "Infrastructure as a Server"
+                  ],
+              "answer":"Infrastructure as a Service",
+              "worth":4
+                 },
+        
+        {
+                 "question": "How many bytes are in a single Kibibyte?",
+                 "options": [
+                 "2400",
+                 "1000",
+                 "1024",
+                 "1240"
+                   ],
+                   "answer":"1024",
+                   "worth":4
+         },
+        
+             {
+                      "question": "Which operating system was released first?",
+                      "options": [
+                      "Windows",
+                      "Linux",
+                      "OS/2",
+                      "Mac OS"
+                          ],
+                      "answer":"Mac OS",
+                      "worth":3
+                       },
+        
+                         {
+                       "question": "Generally, which component of a computer draws the most power?",
+                       "options": [
+                       "Hard Drive",
+                        "Video Card",
+                       "Processor",
+                       "Power Supply"
+                            ],
+                       "answer":"Video Card",
+                       "worth":3
+                        },
+        
+                   {
+
+                          "question": "What does the computer software acronym JVM stand for?",
+                          "options": [
+                          "Java Vendor Machine",
+                           "Java Virtual Machine",
+                          "Java Visual Machine",
+                          "Just Virtual Machine"
+                               ],
+                          "answer": "Java Virtual Machine",
+                          "worth":2
+                     
+                            },
+        
+               {
+
+                       "question": "The C programming language was created by this American computer scientist. ",
+                       "options": [
+                       "Tim Berners Lee",
+                       "Dennis Ritchie",
+                       "al-Khwārizmī",
+                       "Willis Ware"
+                             ],
+                       "answer":"Dennis Ritchie",
+                       "worth":3
+                     },
+        
+              {
+
+                           "question": "In computing, what does MIDI stand for?",
+                           "options": [
+                           "Musical Interface of Digital Instruments",
+                           "Modular Interface of Digital Instruments",
+                           "Musical Instrument Data Interface",
+                           "Musical Intstrument Digital Interface"
+                                ],
+                             "answer":"Musical Instrument Digital Interface",
+                             "worth":1
+                  
+                             },
+        
+                
+                     {
+
+                            "question": "What does LTS stand for in the software market?",
+                            "options": [
+                            "Long Taco Service",
+                            "Ludicrous Transfer Speed",
+                            "Ludicrous Turbo Speed",
+                            "Long Term Support"
+                                  ],
+                         "answer":"Long Term Support",
+                         "worth":1
+                          }
+        ]
+},
+            
+        
         {
             "category": "Mathematics",
             "questions": [
