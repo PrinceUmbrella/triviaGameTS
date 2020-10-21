@@ -22,7 +22,7 @@ const store = createStore(playReducer, composeEnhancers);
 
 function App() {
     return (
-        <div>
+        <div className="container">
             <Provider store={store}>
                 <BrowserRouter>
                     <Container style={{ marginTop: 100 }}>

@@ -3,6 +3,7 @@ import { Question } from "../interfaces/gameInterfaces";
 import { Jumbotron, Button, Container } from "reactstrap";
 import { useDispatch, useSelector } from "react-redux";
 import {
+    correctAnswer,
     moveToNextQuestion,
     setAnswer,
     setPlayerAnswer,
@@ -26,6 +27,7 @@ function QuestionsDisplay(props?: any) {
                     question.worth
                 )
             );
+            dispatch(correctAnswer(currentQuestionNum.currentQuestion % 2));
         }
         setRSelected(undefined);
         dispatch(moveToNextQuestion());

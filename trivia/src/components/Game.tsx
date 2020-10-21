@@ -3,10 +3,11 @@ import Score from "./Score";
 import QuestionsDisplay from "./Questions";
 import questionList from "../data/questionsInput.json";
 import { Question, Category, RootInput } from "../interfaces/gameInterfaces";
-import { Container, Jumbotron, Progress } from "reactstrap";
+import { Col, Container, Jumbotron, Row } from "reactstrap";
 import { useSelector } from "react-redux";
 import CheckAnswer from "./CheckAnswer";
 import Final from "./Final";
+import PlayerProgress from "./PlayerProgress";
 
 function Game() {
     const state: any = useSelector((state) => state);
@@ -31,10 +32,17 @@ function Game() {
         getLevelQuestion(allQuestion, 5)
     );
 
-    allQuestion = shuffleArray(allQuestion);
+    allQuestion = [
+        ...levelOne.slice(0, 2),
+        ...levelTwo.slice(0, 2),
+        ...levelThree.slice(0, 2),
+        ...levelFour.slice(0, 2),
+        ...levelFive.slice(0, 2),
+    ];
+
+    console.log(allQuestion);
     return (
         <Container>
-            <Progress value={state.currentQuestion * 10} />
             {state.currentQuestion === 10 ? (
                 <Jumbotron>
                     <Container>
@@ -43,16 +51,25 @@ function Game() {
                 </Jumbotron>
             ) : (
                 <div>
-                    <Score />
+                    <PlayerProgress />
                     <br />
-                    {state.answer !== "" && state.currentAnswer !== "" ? (
-                        <CheckAnswer />
-                    ) : (
-                        <div></div>
-                    )}
-                    <br />
-                    <QuestionsDisplay question={allQuestion[currentQuestion]} />
-                    <br />
+                    <Row>
+                        {/* <br /> */}
+                        <Col md="4" lg="8">
+                            {state.answer !== "" &&
+                            state.currentAnswer !== "" ? (
+                                <CheckAnswer />
+                            ) : (
+                                <div></div>
+                            )}
+                            <QuestionsDisplay
+                                question={allQuestion[currentQuestion]}
+                            />
+                        </Col>
+                        <Col md="4">
+                            <Score />
+                        </Col>
+                    </Row>
                 </div>
             )}
         </Container>

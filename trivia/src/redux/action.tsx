@@ -4,6 +4,7 @@ export const UPDATE_SCORE = "UPDATE_SCORE";
 export const NEXT_QUESTION = "NEXT_QUESTION";
 export const SET_ANSWER = "SET_ANSWER";
 export const SET_PLAYER_ANSWER = "SET_PLAYER_ANSWER";
+export const CORRECT_ANSWER = "CORRECT_ANSWER";
 
 export function updateScore(index: any, score: any) {
     return {
@@ -38,6 +39,13 @@ export function playerName(index: any, name: any) {
 export function selectPlayer(index: any) {
     return {
         type: SELECT_PLAYER,
+        index,
+    };
+}
+
+export function correctAnswer(index: any) {
+    return {
+        type: CORRECT_ANSWER,
         index,
     };
 }

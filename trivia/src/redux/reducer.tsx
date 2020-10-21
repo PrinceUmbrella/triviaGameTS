@@ -5,10 +5,12 @@ const initalState = {
         {
             name: "",
             score: 0,
+            correctAnswer: 0,
         },
         {
             name: "",
             score: 0,
+            correctAnswer: 0,
         },
     ],
     currentQuestion: 0,
@@ -50,11 +52,22 @@ export function playReducer(state: any = initalState, action: any) {
                 ...state,
                 players: updatePlayerName,
             };
-        // case GameActions.SELECT_PLAYER:
-        //     return {
-        //         ...state,
-        //         selectedPlayerIndex: action.index
-        //     }
+        case GameActions.CORRECT_ANSWER:
+            const updateCorrectList = state.players.map(
+                (player: any, index: any) => {
+                    if (index === action.index) {
+                        return {
+                            ...player,
+                            correctAnswer: player.correctAnswer + 1,
+                        };
+                    }
+                    return player;
+                }
+            );
+            return {
+                ...state,
+                players: updateCorrectList,
+            };
         case GameActions.NEXT_QUESTION:
             return {
                 ...state,
