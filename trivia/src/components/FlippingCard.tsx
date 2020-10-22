@@ -15,8 +15,8 @@ function FlippingCard(props: any) {
     const state: any = useSelector((state) => state);
     const [isFlipped, setIsFlipped] = useState(false);
     let isCurrentPlayerWinner =
-        state.players[props.index].correctAnswer >
-        state.players[(props.index + 1) % 2].correctAnswer;
+        state.players[props.index].score >
+        state.players[(props.index + 1) % 2].score;
 
     const incorrectList = state.players[
         props.index

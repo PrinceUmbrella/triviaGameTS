@@ -40,9 +40,13 @@ function Game() {
         ...levelFive.slice(0, 2),
     ];
 
+    allQuestion.map((question: Question) => {
+        question.options = shuffleArray(question.options);
+    });
+
     return (
         <Container>
-            {state.currentQuestion === 4 ? (
+            {state.currentQuestion === 10 ? (
                 <Jumbotron>
                     <Container>
                         <Final />
@@ -88,7 +92,7 @@ function getLevelQuestion(questionList: Question[], level: number): Question[] {
     return levelList;
 }
 
-function shuffleArray(array: Question[]) {
+function shuffleArray(array: any) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
