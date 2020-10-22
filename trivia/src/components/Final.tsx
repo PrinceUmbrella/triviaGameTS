@@ -28,7 +28,7 @@ function Final() {
                 }}
             >
                 <Button color="primary" size="lg" block>
-                    Restart Game With Same Players
+                    Restart Game
                 </Button>
             </Link>
         </div>
