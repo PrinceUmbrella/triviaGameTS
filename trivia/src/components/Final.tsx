@@ -1,38 +1,16 @@
-import React from 'react'; 
-import { useSelector } from 'react-redux';
-import { Table } from 'reactstrap';
+import React from "react";
+import { useSelector } from "react-redux";
+import { Table } from "reactstrap";
+import FlippingCard from "./FlippingCard";
 
-
-function Final(){
-
-    const state: any = useSelector((state) => state);
-
-    const tableRow = (playerName:any, playerScore:any,position:any) => (
-        <tr>
-            <td>{position}</td>
-            <td>{playerName}</td>
-            <td>{playerScore}</td>
-        </tr>
-    ); 
-
-
-    return (
-        <div>
-            <Table striped bordered hover variant="dark">
-                    <thead>
-                    <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Score</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {tableRow(state.players[0].name, state.players[0].score, 1)}
-                    {tableRow(state.players[1].name, state.players[1].score, 2)}
-                </tbody>
-            </Table>
-        </div>
-    )   
+function Final() {
+  return (
+    <div>
+      <FlippingCard index={0}></FlippingCard>
+      <br></br>
+      <FlippingCard index={1}></FlippingCard>
+    </div>
+  );
 }
 
-export default Final; 
+export default Final;
