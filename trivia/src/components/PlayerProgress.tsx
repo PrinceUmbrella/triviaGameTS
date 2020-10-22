@@ -4,12 +4,11 @@ import { Progress } from "reactstrap";
 
 function PlayerProgress() {
     let currentValue: any = useSelector((state) => state);
-    let currentPlayer = currentValue.currentQuestion % 2;
-    let answered = currentValue.players[currentPlayer].correctAnswer;
+    let currentPlayer = currentValue.currentQuestion;
 
     return (
-        <Progress value={answered * 20} color="danger">
-            {answered * 20}%
+        <Progress value={currentPlayer * 10} color="warning">
+            {currentPlayer * 10}%
         </Progress>
     );
 }

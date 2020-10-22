@@ -34,7 +34,7 @@ function Game() {
                             ) : (
                                 <div></div>
                             )}
-                            {state.questionList ? (
+                            {state.questionList !== [] ? (
                                 <QuestionsDisplay
                                     question={
                                         state.questionList[currentQuestion]
