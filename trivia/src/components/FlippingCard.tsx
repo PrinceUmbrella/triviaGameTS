@@ -1,65 +1,87 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import { useSelector } from "react-redux";
-import { Button, Card, CardBody, CardText, CardTitle, Table } from "reactstrap";
+import {
+    Button,
+    Card,
+    CardBody,
+    CardText,
+    CardTitle,
+    ListGroup,
+    ListGroupItem,
+} from "reactstrap";
 
 function FlippingCard(props: any) {
-  const state: any = useSelector((state) => state);
-  const [isFlipped, setIsFlipped] = useState(false);
+    const state: any = useSelector((state) => state);
+    const [isFlipped, setIsFlipped] = useState(false);
+    let isCurrentPlayerWinner =
+        state.players[props.index].correctAnswer >
+        state.players[(props.index + 1) % 2].correctAnswer;
 
-  const incorrectList = state.players[
-    props.index
-  ].incorrectAnswer.map((question: any) => <li>{question}</li>);
+    const incorrectList = state.players[
+        props.index
+    ].incorrectAnswer.map((question: any) => (
+        <ListGroupItem color="warning">{question}</ListGroupItem>
+    ));
 
-  return (
-    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-      <Card
-        color="dark"
-        text="white"
-        onClick={() => {
-          setIsFlipped(!isFlipped);
-        }}
-      >
-        <CardBody className="text-center">
-          <CardTitle>{state.players[props.index].name}</CardTitle>
-          <CardText>{state.players[props.index].score}</CardText>
-          <Button
-            color="danger"
-            onClick={() => {
-              setIsFlipped(!isFlipped);
-            }}
-          >
-            Click to flip
-          </Button>
-        </CardBody>
-      </Card>
+    return (
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+            <Card
+                color={isCurrentPlayerWinner ? "success" : "warning"}
+                text="white"
+                onClick={() => {
+                    setIsFlipped(!isFlipped);
+                }}
+            >
+                <CardBody className="text-center">
+                    <CardTitle>
+                        <h2>
+                            {isCurrentPlayerWinner
+                                ? "Congratulations You Won"
+                                : ""}
+                        </h2>
+                        <h2>{state.players[props.index].name}</h2>
+                    </CardTitle>
+                    <CardText>
+                        <h3>{state.players[props.index].score}</h3>
+                    </CardText>
+                    <Button
+                        color="danger"
+                        onClick={() => {
+                            setIsFlipped(!isFlipped);
+                        }}
+                    >
+                        See Incorrect Questions
+                    </Button>
+                </CardBody>
+            </Card>
 
-      <Card
-        onClick={() => {
-          setIsFlipped(!isFlipped);
-        }}
-      >
-        <CardBody className="text-center">
-          <CardTitle>
-            {" "}
-            <h1>Incorrect Questions</h1>
-          </CardTitle>
+            <Card
+                onClick={() => {
+                    setIsFlipped(!isFlipped);
+                }}
+            >
+                <CardBody className="text-center">
+                    <CardTitle>
+                        {" "}
+                        <h1>Incorrect Questions</h1>
+                    </CardTitle>
 
-          <CardText>
-            <ul>{incorrectList}</ul>
-          </CardText>
-          <Button
-            color="primary"
-            onClick={() => {
-              setIsFlipped(!isFlipped);
-            }}
-          >
-            Click to flip
-          </Button>
-        </CardBody>
-      </Card>
-    </ReactCardFlip>
-  );
+                    <CardText>
+                        <ListGroup>{incorrectList}</ListGroup>
+                    </CardText>
+                    <Button
+                        color="primary"
+                        onClick={() => {
+                            setIsFlipped(!isFlipped);
+                        }}
+                    >
+                        Go Back To Score
+                    </Button>
+                </CardBody>
+            </Card>
+        </ReactCardFlip>
+    );
 }
 
 export default FlippingCard;

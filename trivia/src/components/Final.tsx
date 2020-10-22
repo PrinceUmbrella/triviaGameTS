@@ -1,16 +1,20 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { Table } from "reactstrap";
+import { Col, Row } from "reactstrap";
 import FlippingCard from "./FlippingCard";
 
 function Final() {
-  return (
-    <div>
-      <FlippingCard index={0}></FlippingCard>
-      <br></br>
-      <FlippingCard index={1}></FlippingCard>
-    </div>
-  );
+    return (
+        <div>
+            <Row>
+                <Col>
+                    <FlippingCard index={0}></FlippingCard>
+                </Col>
+                <Col>
+                    <FlippingCard index={1}></FlippingCard>
+                </Col>
+            </Row>
+        </div>
+    );
 }
 
 export default Final;

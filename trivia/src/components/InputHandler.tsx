@@ -21,7 +21,9 @@ function InputHandler() {
         <div className="App">
             <Jumbotron>
                 <h1>Welcome !!!</h1>
-                <h1>Let's play trivia 😁</h1>
+                <h1>
+                    Let's play trivia <span role="img">😁</span>
+                </h1>
                 <hr />
                 <h3>Enter Player's Names</h3>
                 <InputGroup>
