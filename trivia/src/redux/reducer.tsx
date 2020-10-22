@@ -18,6 +18,7 @@ const initalState = {
     currentQuestion: 0,
     answer: "",
     playerAnswer: "",
+    questionList: [],
 };
 
 export function playReducer(state: any = initalState, action: any) {
@@ -37,6 +38,11 @@ export function playReducer(state: any = initalState, action: any) {
             return {
                 ...state,
                 players: updatePlayerList,
+            };
+        case GameActions.GET_QUESTIONS:
+            return {
+                ...state,
+                questionList: [...action.questionList],
             };
         case GameActions.ADD_PLAYER:
             const updatePlayerName = state.players.map(
@@ -70,6 +76,7 @@ export function playReducer(state: any = initalState, action: any) {
                 ...state,
                 players: updateCorrectList,
             };
+
         case GameActions.NEXT_QUESTION:
             return {
                 ...state,
