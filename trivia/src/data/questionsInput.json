@@ -456,6 +456,231 @@
                     "worth": 2
                 }
             ]
+        },
+        {
+            "category": "Anime",
+            "questions": [
+                {
+                    "question": "In Kill La Kill, the weapon of the main protagonist is a katana. ",
+                    "options": ["True", "False"],
+                    "answer": "False",
+                    "worth": 1
+                },
+                {
+                    "question": "In 'Inuyasha', what are the heros are looking to collect?",
+                    "options": [
+                        "Dragon Balls",
+                        "Rave Stones",
+                        "Sacred Stones",
+                        "Jewel Shards"
+                    ],
+                    "answer": "Jewel Shards",
+                    "worth": 1
+                },
+                {
+                    "question": "What was Ash Ketchum&#039;s second Pokemon?",
+                    "options": ["Charmander", "Pikachu", "Pidgey", "Caterpie"],
+                    "answer": "Caterpie",
+                    "worth": 1
+                },
+                {
+                    "question": "Which of the following originated as a manga?",
+                    "options": [
+                        "Cowboy Bebop",
+                        "High School DxD",
+                        "Gurren Lagann",
+                        "Akira"
+                    ],
+                    "answer": "Akira",
+                    "worth": 1
+                },
+                {
+                    "question": "In the anime 'My Hero Academia', which character is shown with the ability to manipulate gravity?",
+                    "options": ["Bakugo", "Deku", "Asui ", "Uraraka"],
+                    "answer": "Uraraka",
+                    "worth": 1
+                },
+                {
+                    "question": "Which band name isn&#039;t a Stand in 'JoJo's Bizzare Adventure'?",
+                    "options": [
+                        "Green Day",
+                        "Survivor",
+                        "Red Hot Chili Peppers",
+                        "AC/DC"
+                    ],
+                    "answer": "AC/DC",
+                    "worth": 2
+                },
+                {
+                    "question": "In &quot;One Piece&quot;, which one of the following is NOT an Ancient Weapon?",
+                    "options": ["Uranus", "Poseidon", "Pluton", "Jupiter"],
+                    "answer": "Jupiter",
+                    "worth": 2
+                },
+                {
+                    "question": "In &quot;Black Lagoon&quot;, what colour is Rock&#039;s tie?",
+                    "options": ["Crimson", "Dark Brown", "Black", "Teal"],
+                    "answer": "Teal",
+                    "worth": 2
+                },
+                {
+                    "question": "What studio animated Fullmetal Alchemist?",
+                    "options": ["Trigger", "Pierrot", "xebec", "Bones"],
+                    "answer": "Bones",
+                    "worth": 2
+                },
+                {
+                    "question": "Which of the following films was NOT directed by Hayao Miyazaki?",
+                    "options": [
+                        "Princess Mononoke",
+                        "Spirited Away",
+                        "Kiki's Delivery Service",
+                        "Wolf Children"
+                    ],
+                    "answer": "Wolf Children",
+                    "worth": 2
+                },
+                {
+                    "question": "What song plays in the ending credits of the anime 'Ergo Proxy'?",
+                    "options": [
+                        "Sadistic Summer",
+                        "Bittersweet Symphony",
+                        "Mad World",
+                        "Paranoid Android"
+                    ],
+                    "answer": "Paranoid Android",
+                    "worth": 3
+                },
+                {
+                    "question": "Which of the following anime of the mecha genre began airing in 1982?",
+                    "options": [
+                        "Mobile Suit Gundam",
+                        "Armored Trooper VOTOMS",
+                        "Neon Genesis Evangelion",
+                        "The Super Dimension Fortress Macross"
+                    ],
+                    "answer": "The Super Dimension Fortress Macross",
+                    "worth": 3
+                },
+                {
+                    "question": "What sport is being played in the Anime Eyeshield 21?",
+                    "options": [
+                        "Baseball",
+                        "Football",
+                        "Basketball",
+                        "American Football"
+                    ],
+                    "answer": "American Football",
+                    "worth": 3
+                },
+                {
+                    "question": "In the 'To Love-Ru' series, how many Trans-weapons were created?",
+                    "options": ["1", "2", "4", "3"],
+                    "answer": "3",
+                    "worth": 3
+                },
+                {
+                    "question": "In 'Highschool DxD', Koneko Toujou is from what race?",
+                    "options": ["Kitsune", "Human", "Kappa", "Nekomata"],
+                    "answer": "Nekomata",
+                    "worth": 3
+                },
+                {
+                    "question": "Medaka Kurokami from 'Medaka Box' has what abnormality?",
+                    "options": ["Perfection", "Sandbox", "Fairness", "The End"],
+                    "answer": "The End",
+                    "worth": 4
+                },
+                {
+                    "question": "In what year did the manga 'Ping Pong' begin serialization?",
+                    "options": ["2014", "2010", "2003", "1996"],
+                    "answer": "1996",
+                    "worth": 4
+                },
+                {
+                    "question": "Which animation studio animated 'Hidamari Sketch'?",
+                    "options": [
+                        "Trigger",
+                        "Kyoto Animation",
+                        "Production I.G",
+                        "Shaft"
+                    ],
+                    "answer": "Shaft",
+                    "worth": 4
+                },
+                {
+                    "question": "Which animation studio produced the anime adaptation of 'xxxHolic'?",
+                    "options": [
+                        "Sunrise",
+                        "Xebec",
+                        "Kyoto Animation",
+                        "Production I.G"
+                    ],
+                    "answer": "Production I.G",
+                    "worth": 4
+                },
+                {
+                    "question": "Who was the Author of the manga Uzumaki?",
+                    "options": [
+                        "Noboru Takahashi",
+                        "Akira Toriyama",
+                        "Masashi Kishimoto",
+                        "Junji Ito"
+                    ],
+                    "answer": "Junji Ito",
+                    "worth": 4
+                },
+                {
+                    "question": "Winch of these names are not a character of JoJo's Bizarre Adventure?",
+                    "options": [
+                        "Jean-Pierre Polnareff",
+                        "George Joestar",
+                        "Risotto Nero",
+                        "JoJo Kikasu"
+                    ],
+                    "answer": "JoJo Kikasu",
+                    "worth": 5
+                },
+                {
+                    "question": "Which of these anime have over 7,500 episodes?",
+                    "options": [
+                        "Naruto",
+                        "One Piece",
+                        "Chibi Maruko-chan",
+                        "Sazae-san"
+                    ],
+                    "answer": "Sazae-san",
+                    "worth": 5
+                },
+                {
+                    "question": "Which song was the callsign for Stefan Verdemann's KWFM radio station in Urasawa Naoki's 'Monster'?",
+                    "options": [
+                        "What a Wonderful World",
+                        "When You Wish Upon A Star",
+                        "Singing In The Rain",
+                        "Over the Rainbow"
+                    ],
+                    "answer": "Over the Rainbow",
+                    "worth": 5
+                },
+                {
+                    "question": "The 'To Love-Ru' Manga was started in what year?",
+                    "options": ["2007", "2004", "2005", "2006"],
+                    "answer": "2006",
+                    "worth": 5
+                },
+                {
+                    "question": "Which animation studio produced 'Log Horizon'?",
+                    "options": [
+                        "Sunrise",
+                        "Xebec",
+                        "Production I.G",
+                        "Satelite"
+                    ],
+                    "answer": "Satelite",
+                    "worth": 5
+                }
+            ]
         }
     ]
 }
