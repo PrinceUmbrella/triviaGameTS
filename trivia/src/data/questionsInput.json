@@ -264,6 +264,137 @@
                     "options": ["Galois", "Abel", "Euler", "Gauss"],
                     "answer": "Galois",
                     "worth": 3
+                },
+                {
+                    "question": "What's the square root of 49?",
+                    "options": ["4", "12", "9", "7"],
+                    "answer": "7",
+                    "worth": 1
+                },
+                {
+                    "question": "What is the correct order of operations for solving equations?",
+                    "options": [
+                        "Addition, Multiplication, Division, Subtraction, Addition, Parentheses",
+                        "Parentheses, Exponents, Addition, Substraction, Multiplication, Division",
+                        "The order in which the operations are written.",
+                        "Parentheses, Exponents, Multiplication, Division, Addition, Subtraction"
+                    ],
+                    "answer": "Parentheses, Exponents, Multiplication, Division, Addition, Subtraction",
+                    "worth": 1
+                },
+                {
+                    "question": "How many sides does a trapezium have?",
+                    "options": ["3", "5", "6", "4"],
+                    "answer": "4",
+                    "worth": 1
+                },
+                {
+                    "question": "What is the symbol for Displacement?",
+                    "options": ["dr", "Dp", "r", "&Delta;r"],
+                    "answer": "&Delta;r",
+                    "worth": 1
+                },
+                {
+                    "question": "The metric prefix 'atto-' makes a measurement how much smaller than the base unit?",
+                    "options": [
+                        "One Billionth",
+                        "One Quadrillionth",
+                        "One Septillionth",
+                        "One Quintillionth"
+                    ],
+                    "answer": "One Quintillionth",
+                    "worth": 1
+                },
+                {
+                    "question": "In a complete graph G, which has 12 vertices, how many edges are there?",
+                    "options": ["67", "34", "11", "66"],
+                    "answer": "66",
+                    "worth": 2
+                },
+                {
+                    "question": "What are the first 6 digits of the number 'Pi'?",
+                    "options": ["3.14169", "3.12423", "3.25812", "3.14159"],
+                    "answer": "3.14159",
+                    "worth": 2
+                },
+                {
+                    "question": "What is the alphanumeric representation of the imaginary number?",
+                    "options": ["e", "n", "x", "i"],
+                    "answer": "i",
+                    "worth": 2
+                },
+                {
+                    "question": "What Greek letter is used to signify summation?",
+                    "options": ["Delta", "Alpha", "Omega", "Sigma"],
+                    "answer": "Sigma",
+                    "worth": 2
+                },
+                {
+                    "question": "Which mathematician refused the Fields Medal?",
+                    "options": [
+                        "Andrew Wiles",
+                        "Terence Tao",
+                        "Edward Witten",
+                        "Grigori Perelman"
+                    ],
+                    "answer": "Grigori Perelman",
+                    "worth": 3
+                },
+                {
+                    "question": "Which of the following dice is not a platonic solid?",
+                    "options": [
+                        "12-sided die",
+                        "20-sided die",
+                        "8-sided die",
+                        "10-sided die"
+                    ],
+                    "answer": "10-sided die",
+                    "worth": 3
+                },
+                {
+                    "question": "The decimal number 31 in hexadecimal would be what?",
+                    "options": ["3D", "2E", "1B", "1F"],
+                    "answer": "1F",
+                    "worth": 4
+                },
+                {
+                    "question": "The French mathematician &Eacute;variste Galois is primarily known for his work in which?",
+                    "options": [
+                        "Galois' Continued Fractions",
+                        "Galois' Method for PDE's ",
+                        "Abelian Integration",
+                        "Galois Theory"
+                    ],
+                    "answer": "Galois Theory",
+                    "worth": 5
+                },
+                {
+                    "question": "Which of these numbers is closest to the total number of possible states for an army standard Enigma Machine?",
+                    "options": [
+                        "1.58 x 10^22",
+                        "1.58 x  10^18",
+                        "1.58 x 10^24",
+                        "1.58 x 10^20"
+                    ],
+                    "answer": "1.58 x 10^20",
+                    "worth": 4
+                },
+                {
+                    "question": "The notion of a 'set that contains all sets which do not contain themselves' is a paradoxical idea attributed to which English philospher?",
+                    "options": [
+                        "Francis Bacon",
+                        "John Locke",
+                        "Alfred North Whitehead",
+                        "Bertrand Russel"
+                    ],
+                    "answer": "Bertrand Russel",
+                    "worth": 4
+                },
+                {
+                    "question": "What is the fourth digit of pi?",
+                    "options": ["2", "3", "4", "1"],
+                    "answer": "1",
+                    "worth": 3
                 }
             ]
         },
@@ -323,6 +454,101 @@
                     "options": ["Cow", "Horse", "Eagle", "Bull"],
                     "answer": "Bull",
                     "worth": 1
+                }
+            ]
+        },
+        {
+            "category": "General Knowledge",
+            "questions": [
+                {
+                    "question": "Area 51 is located in which US state?",
+                    "options": ["Arizona", "New Mexico", "Utah", "Nevada"],
+                    "answer": "Nevada",
+                    "worth": 2
+                },
+                {
+                    "question": "What is the largest organ of the human body?",
+                    "options": ["Heart", "large Intestine", "Liver", "Skin"],
+                    "answer": "Skin",
+                    "worth": 2
+                },
+                {
+                    "question": "What was the nickname given to the Hughes H-4 Hercules, a heavy transport flying boat which achieved flight in 1947?",
+                    "options": [
+                        "Noah's Ark",
+                        "Fat Man",
+                        "Trojan Horse",
+                        "Spruce Goose"
+                    ],
+                    "answer": "Spruce Goose",
+                    "worth": 2
+                },
+                {
+                    "question": "What do the letters in the GMT time zone stand for?",
+                    "options": [
+                        "Global Meridian Time",
+                        "General Median Time",
+                        "Glasgow Man Time",
+                        "Greenwich Mean Time"
+                    ],
+                    "answer": "Greenwich Mean Time",
+                    "worth": 2
+                },
+                {
+                    "question": "The New York Times slogan is, &ldquo;All the News That&rsquo;s Fit to&hellip;&rdquo;",
+                    "options": ["Digest", "Look", "Read", "Print"],
+                    "answer": "Print",
+                    "worth": 2
+                },
+                {
+                    "question": "What do the letters of the fast food chain KFC stand for?",
+                    "options": [
+                        "Kentucky Fresh Cheese",
+                        "Kibbled Freaky Cow",
+                        "Kiwi Food Cut",
+                        "Kentucky Fried Chicken"
+                    ],
+                    "answer": "Kentucky Fried Chicken",
+                    "worth": 2
+                },
+                {
+                    "question": "Which restaurant's mascot is a clown?",
+                    "options": [
+                        "Whataburger",
+                        "Burger King",
+                        "Sonic",
+                        "McDonald's"
+                    ],
+                    "answer": "McDonald's",
+                    "worth": 2
+                },
+                {
+                    "question": "Which sign of the zodiac comes between Virgo and Scorpio?",
+                    "options": ["Gemini", "Taurus", "Capricorn", "Libra"],
+                    "answer": "Libra",
+                    "worth": 2
+                },
+                {
+                    "question": "The drug cartel run by Pablo Escobar originated in which South American city?",
+                    "options": [
+                        "Bogotaacute;",
+                        "Quito",
+                        "Cali",
+                        "Medelliacuten"
+                    ],
+                    "answer": "Medelliacuten",
+                    "worth": 2
+                },
+                {
+                    "question": "What airline was the owner of the plane that crashed off the coast of Nova Scotia in 1998?",
+                    "options": [
+                        "Air France",
+                        "British Airways",
+                        "TWA",
+                        "Swiss Air"
+                    ],
+                    "answer": "Swiss Air",
+                    "worth": 2
                 }
             ]
         },

@@ -10,12 +10,12 @@ for (var i = 0; i < newfile.length; i++) {
         question: newfile[i].question,
         options: [...newfile[i].incorrect_answers, newfile[i].correct_answer],
         answer: newfile[i].correct_answer,
-        worth: 5,
+        worth: 2,
     };
     input.push(format);
 }
 
-fs.writeFile("./newFile.json", JSON.stringify(input), function (err: any) {
+fs.writeFile("newFile.json", JSON.stringify(input), function (err: any) {
     if (err) throw err;
     console.log("complete");
 });

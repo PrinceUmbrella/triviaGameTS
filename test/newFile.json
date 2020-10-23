@@ -1,1 +1,72 @@
-[{"question":"Winch of these names are not a character of JoJo&#039;s Bizarre Adventure?","options":["Jean-Pierre Polnareff","George Joestar","Risotto Nero","JoJo Kikasu"],"answer":"JoJo Kikasu","worth":5},{"question":"Which of these anime have over 7,500 episodes?","options":["Naruto","One Piece","Chibi Maruko-chan","Sazae-san"],"answer":"Sazae-san","worth":5},{"question":"Which song was the callsign for Stefan Verdemann&#039;s KWFM radio station in Urasawa Naoki&#039;s 'Monster'?","options":["What a Wonderful World","When You Wish Upon A Star","Singing In The Rain","Over the Rainbow"],"answer":"Over the Rainbow","worth":5},{"question":"The 'To Love-Ru' Manga was started in what year?","options":["2007","2004","2005","2006"],"answer":"2006","worth":5},{"question":"Which animation studio produced 'Log Horizon'?","options":["Sunrise","Xebec","Production I.G","Satelite"],"answer":"Satelite","worth":5}]
+[
+    {
+        "question": "Area 51 is located in which US state?",
+        "options": ["Arizona", "New Mexico", "Utah", "Nevada"],
+        "answer": "Nevada",
+        "worth": 2
+    },
+    {
+        "question": "What is the largest organ of the human body?",
+        "options": ["Heart", "large Intestine", "Liver", "Skin"],
+        "answer": "Skin",
+        "worth": 2
+    },
+    {
+        "question": "What was the nickname given to the Hughes H-4 Hercules, a heavy transport flying boat which achieved flight in 1947?",
+        "options": ["Noah's Ark", "Fat Man", "Trojan Horse", "Spruce Goose"],
+        "answer": "Spruce Goose",
+        "worth": 2
+    },
+    {
+        "question": "What do the letters in the GMT time zone stand for?",
+        "options": [
+            "Global Meridian Time",
+            "General Median Time",
+            "Glasgow Man Time",
+            "Greenwich Mean Time"
+        ],
+        "answer": "Greenwich Mean Time",
+        "worth": 2
+    },
+    {
+        "question": "The New York Times slogan is, &ldquo;All the News That&rsquo;s Fit to&hellip;&rdquo;",
+        "options": ["Digest", "Look", "Read", "Print"],
+        "answer": "Print",
+        "worth": 2
+    },
+    {
+        "question": "What do the letters of the fast food chain KFC stand for?",
+        "options": [
+            "Kentucky Fresh Cheese",
+            "Kibbled Freaky Cow",
+            "Kiwi Food Cut",
+            "Kentucky Fried Chicken"
+        ],
+        "answer": "Kentucky Fried Chicken",
+        "worth": 2
+    },
+    {
+        "question": "Which restaurant's mascot is a clown?",
+        "options": ["Whataburger", "Burger King", "Sonic", "McDonald's"],
+        "answer": "McDonald's",
+        "worth": 2
+    },
+    {
+        "question": "Which sign of the zodiac comes between Virgo and Scorpio?",
+        "options": ["Gemini", "Taurus", "Capricorn", "Libra"],
+        "answer": "Libra",
+        "worth": 2
+    },
+    {
+        "question": "The drug cartel run by Pablo Escobar originated in which South American city?",
+        "options": ["Bogotaacute;", "Quito", "Cali", "Medelliacuten"],
+        "answer": "Medelliacuten",
+        "worth": 2
+    },
+    {
+        "question": "What airline was the owner of the plane that crashed off the coast of Nova Scotia in 1998?",
+        "options": ["Air France", "British Airways", "TWA", "Swiss Air"],
+        "answer": "Swiss Air",
+        "worth": 2
+    }
+]
