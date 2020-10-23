@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Score from "./Score";
 
 import { Col, Container, Jumbotron, Row } from "reactstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import CheckAnswer from "./CheckAnswer";
 import Final from "./Final";
 import PlayerProgress from "./PlayerProgress";
@@ -41,7 +41,7 @@ function Game() {
                                     }
                                 />
                             ) : (
-                                <Redirect to="/input" />
+                                <Redirect to="/" />
                             )}
                         </Col>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Game from "./components/Game";
-import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
+import { Switch, Route, Redirect, HashRouter } from "react-router-dom";
 import { Container } from "reactstrap";
 import { Provider } from "react-redux";
 import { compose, createStore } from "redux";
@@ -24,15 +24,15 @@ function App() {
     return (
         <div className="container">
             <Provider store={store}>
-                <BrowserRouter>
+                <HashRouter basename="/">
                     <Container style={{ marginTop: 100 }}>
                         <Switch>
-                            <Route path="/input" component={InputHandler} />
+                            <Route exact path="/" component={InputHandler} />
                             <Route path="/home" component={Game} />
-                            <Redirect to="/input" />
+                            <Redirect to="/" />
                         </Switch>
                     </Container>
-                </BrowserRouter>
+                </HashRouter>
             </Provider>
         </div>
     );

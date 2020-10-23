@@ -67,9 +67,9 @@ function QuestionsDisplay(props?: any) {
                     })}
                 </div>
             ) : (
-                <Redirect to="/input" />
+                <Redirect to="/" />
             )}
-
+            <br />
             {rSelected ? (
                 <Button
                     color="primary"

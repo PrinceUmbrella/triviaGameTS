@@ -13,7 +13,6 @@ function InputHandler() {
 
     let dispatch = useDispatch();
 
-    console.log(allQuestion);
     const buttonClicked = (
         nameOne: string | undefined,
         nameTwo: string | undefined
