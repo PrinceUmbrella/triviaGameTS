@@ -50,6 +50,7 @@ function Score() {
                     </h1>
                 </CardText>
             </Card>
+            <br />
         </div>
     );
 }
