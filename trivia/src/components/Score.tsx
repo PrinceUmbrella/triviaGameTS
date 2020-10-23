@@ -18,7 +18,7 @@ function Score() {
                     <h1>
                         <Badge color="secondary">
                             For {currentPoints}{" "}
-                            {currentPoints > 2 ? "Points" : "Point"}
+                            {currentPoints == 1 ? "Point" : "Points"}
                         </Badge>
                     </h1>
                 </CardText>
@@ -34,9 +34,9 @@ function Score() {
                     <h3>
                         <Badge color="secondary">
                             {currentValue.players[0].score}{" "}
-                            {currentValue.players[0].score > 2
-                                ? "Points"
-                                : "Point"}
+                            {currentValue.players[0].score == 1
+                                ? "Point"
+                                : "Points"}
                         </Badge>
                     </h3>
                 </CardText>
@@ -51,9 +51,9 @@ function Score() {
                     <h3>
                         <Badge color="secondary">
                             {currentValue.players[1].score}{" "}
-                            {currentValue.players[1].score > 2
-                                ? "Points"
-                                : "Point"}
+                            {currentValue.players[1].score == 1
+                                ? "Point"
+                                : "Points"}
                         </Badge>
                     </h3>
                 </CardText>

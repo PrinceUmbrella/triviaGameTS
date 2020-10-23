@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import { useSelector } from "react-redux";
 import {
+    Badge,
     Button,
     Card,
     CardBody,
@@ -40,7 +41,15 @@ function FlippingCard(props: any) {
                                 ? "Congratulations You Won"
                                 : ""}
                         </h2>
-                        <h2>{state.players[props.index].name}</h2>
+                        <h2>
+                            {state.players[props.index].name}{" "}
+                            <Badge color="secondary">
+                                {state.players[props.index].score}{" "}
+                                {state.players[props.index].score == 1
+                                    ? "Point"
+                                    : "Points"}
+                            </Badge>
+                        </h2>
                     </CardTitle>
                     <CardText>
                         <h3>{state.players[props.index].score}</h3>
