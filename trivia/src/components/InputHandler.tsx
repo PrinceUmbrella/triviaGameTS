@@ -2,19 +2,25 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { Button, Input, InputGroup, Jumbotron } from "reactstrap";
-import { playerName } from "../redux/action";
+import { getQuestions, playerName } from "../redux/action";
+import { Question } from "../interfaces/gameInterfaces";
+import listOfQuestions from "./SetOfQuestions";
 
 function InputHandler() {
     const [playerOneInfo, setPlayerOneInfo] = useState<string>();
     const [playerTwoInfo, setPlayerTwoInfo] = useState<string>();
+    let allQuestion: Question[] = listOfQuestions();
 
     let dispatch = useDispatch();
+
+    console.log(allQuestion);
     const buttonClicked = (
         nameOne: string | undefined,
         nameTwo: string | undefined
     ) => {
         dispatch(playerName(0, nameOne));
         dispatch(playerName(1, nameTwo));
+        dispatch(getQuestions(allQuestion));
     };
 
     return (

@@ -2,8 +2,9 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { Button, Col, Row } from "reactstrap";
-import { resetState } from "../redux/action";
+import { getQuestions, resetState } from "../redux/action";
 import FlippingCard from "./FlippingCard";
+import listOfQuestions from "./SetOfQuestions";
 
 function Final() {
     const dispatch = useDispatch();
@@ -19,15 +20,15 @@ function Final() {
             </Row>
             <br />
             <br />
-
             <Link
                 to="/home"
                 onClick={() => {
                     dispatch(resetState());
+                    dispatch(getQuestions(listOfQuestions()));
                 }}
             >
                 <Button color="primary" size="lg" block>
-                    Restart Game With Same Players
+                    Restart Game
                 </Button>
             </Link>
         </div>

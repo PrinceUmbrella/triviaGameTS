@@ -1,3 +1,5 @@
+import { Question } from "../interfaces/gameInterfaces";
+
 export const ADD_PLAYER = "ADD_PLAYER";
 export const SELECT_PLAYER = "SELECT_PLAYER";
 export const UPDATE_SCORE = "UPDATE_SCORE";
@@ -7,6 +9,7 @@ export const SET_PLAYER_ANSWER = "SET_PLAYER_ANSWER";
 export const CORRECT_ANSWER = "CORRECT_ANSWER";
 export const INCORRECT_ANSWER = "INCORRECT_ANSWER";
 export const RESET_STATE = "RESET_STATE";
+export const GET_QUESTIONS = "GET_QUESTIONS";
 
 export function updateScore(index: any, score: any) {
     return {
@@ -20,6 +23,13 @@ export function setAnswer(answer: string | undefined) {
     return {
         type: SET_ANSWER,
         answer: answer,
+    };
+}
+
+export function getQuestions(questionList: Question[] | undefined) {
+    return {
+        type: GET_QUESTIONS,
+        questionList,
     };
 }
 
