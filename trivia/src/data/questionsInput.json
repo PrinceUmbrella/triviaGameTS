@@ -478,7 +478,7 @@
                     "worth": 1
                 },
                 {
-                    "question": "What was Ash Ketchum&#039;s second Pokemon?",
+                    "question": "What was Ash Ketchum's second Pokemon?",
                     "options": ["Charmander", "Pikachu", "Pidgey", "Caterpie"],
                     "answer": "Caterpie",
                     "worth": 1
@@ -501,7 +501,7 @@
                     "worth": 1
                 },
                 {
-                    "question": "Which band name isn&#039;t a Stand in 'JoJo's Bizzare Adventure'?",
+                    "question": "Which band name isn't a Stand in 'JoJo's Bizzare Adventure'?",
                     "options": [
                         "Green Day",
                         "Survivor",
@@ -518,7 +518,7 @@
                     "worth": 2
                 },
                 {
-                    "question": "In &quot;Black Lagoon&quot;, what colour is Rock&#039;s tie?",
+                    "question": "In &quot;Black Lagoon&quot;, what colour is Rock's tie?",
                     "options": ["Crimson", "Dark Brown", "Black", "Teal"],
                     "answer": "Teal",
                     "worth": 2
