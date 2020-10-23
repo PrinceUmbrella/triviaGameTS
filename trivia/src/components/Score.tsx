@@ -9,6 +9,22 @@ function Score() {
     let playerTwo = currentValue.currentQuestion % 2 !== 0 ? "danger" : "";
     return (
         <div className="App">
+            <Card body color="warning">
+                <CardText>
+                    <h1>
+                        <Badge color="secondary">
+                            For{" "}
+                            {(currentValue.currentQuestion % 2
+                                ? ((currentValue.currentQuestion - 1) / 2) % 5
+                                : (currentValue.currentQuestion / 2) % 5) +
+                                1}{" "}
+                            Points
+                        </Badge>
+                    </h1>
+                </CardText>
+            </Card>
+            <br />
+            <br />
             <Card body color={playerOne}>
                 <CardTitle>
                     <h3>{currentValue.players[0].name}</h3>
@@ -17,7 +33,7 @@ function Score() {
                     {" "}
                     <h3>
                         <Badge color="secondary">
-                            {currentValue.players[0].score}
+                            {currentValue.players[0].score} Points
                         </Badge>
                     </h3>
                 </CardText>
@@ -31,23 +47,9 @@ function Score() {
                 <CardText>
                     <h3>
                         <Badge color="secondary">
-                            {currentValue.players[1].score}
+                            {currentValue.players[1].score} Points
                         </Badge>
                     </h3>
-                </CardText>
-            </Card>
-            <br />
-            <br />
-            <Card body color="warning">
-                <CardText>
-                    <h1>
-                        <Badge color="secondary">
-                            Level{" "}
-                            {(currentValue.currentQuestion % 2
-                                ? ((currentValue.currentQuestion - 1) / 2) % 5
-                                : (currentValue.currentQuestion / 2) % 5) + 1}
-                        </Badge>
-                    </h1>
                 </CardText>
             </Card>
             <br />

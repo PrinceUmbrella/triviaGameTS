@@ -7,8 +7,11 @@ function PlayerProgress() {
     let currentPlayer = currentValue.currentQuestion;
 
     return (
-        <Progress value={currentPlayer * 10} color="warning">
-            {currentPlayer * 10}%
+        <Progress
+            value={currentPlayer ? currentPlayer * 10 : 0}
+            color="warning"
+        >
+            {currentPlayer ? currentPlayer * 10 : 0}%
         </Progress>
     );
 }
