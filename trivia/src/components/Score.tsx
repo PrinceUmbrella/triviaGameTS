@@ -7,18 +7,18 @@ function Score() {
     let currentValue: any = useSelector((state) => state);
     let playerOne = currentValue.currentQuestion % 2 === 0 ? "danger" : "";
     let playerTwo = currentValue.currentQuestion % 2 !== 0 ? "danger" : "";
+    let currentPoints =
+        (currentValue.currentQuestion % 2
+            ? ((currentValue.currentQuestion - 1) / 2) % 5
+            : (currentValue.currentQuestion / 2) % 5) + 1;
     return (
         <div className="App">
             <Card body color="warning">
                 <CardText>
                     <h1>
                         <Badge color="secondary">
-                            For{" "}
-                            {(currentValue.currentQuestion % 2
-                                ? ((currentValue.currentQuestion - 1) / 2) % 5
-                                : (currentValue.currentQuestion / 2) % 5) +
-                                1}{" "}
-                            Points
+                            For {currentPoints}{" "}
+                            {currentPoints > 2 ? "Points" : "Point"}
                         </Badge>
                     </h1>
                 </CardText>
@@ -33,7 +33,10 @@ function Score() {
                     {" "}
                     <h3>
                         <Badge color="secondary">
-                            {currentValue.players[0].score} Points
+                            {currentValue.players[0].score}{" "}
+                            {currentValue.players[0].score > 2
+                                ? "Points"
+                                : "Point"}
                         </Badge>
                     </h3>
                 </CardText>
@@ -47,7 +50,10 @@ function Score() {
                 <CardText>
                     <h3>
                         <Badge color="secondary">
-                            {currentValue.players[1].score} Points
+                            {currentValue.players[1].score}{" "}
+                            {currentValue.players[1].score > 2
+                                ? "Points"
+                                : "Point"}
                         </Badge>
                     </h3>
                 </CardText>
