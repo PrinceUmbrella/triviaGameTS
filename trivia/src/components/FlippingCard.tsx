@@ -44,12 +44,14 @@ function FlippingCard(props: any) {
                         <h2>{state.players[props.index].name} </h2>
                     </CardTitle>
                     <CardText>
-                        <Badge color="secondary">
-                            {state.players[props.index].score}{" "}
-                            {state.players[props.index].score == 1
-                                ? "Point"
-                                : "Points"}
-                        </Badge>
+                        <h3>
+                            <Badge color="secondary">
+                                {state.players[props.index].score}{" "}
+                                {state.players[props.index].score === 1
+                                    ? "Point"
+                                    : "Points"}
+                            </Badge>
+                        </h3>
                     </CardText>
                     <Button
                         color="danger"
