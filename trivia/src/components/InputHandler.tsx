@@ -30,7 +30,7 @@ function InputHandler() {
                     Let's play trivia <span role="img">😁</span>
                 </h1>
                 <hr />
-                <h3>Enter Player's Names</h3>
+                <h3>Enter Player Names</h3>
                 <InputGroup>
                     <Input
                         type="text"
