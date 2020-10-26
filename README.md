@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Group Members:
+Leoul Tilahun <br>
+Jesus Arredondo <br>
+DeAria Little <br>
+Royce Payne <br>
 
+# [GO TO THIS LINK TO PLAY THE GAME](https://princeumbrella.github.io/triviaGameTS/#/)
 # Steps For Set Up
 
 ## 1. Node Set Up
