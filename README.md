@@ -2,8 +2,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Group Members:
 Leoul Tilahun <br>
 Jesus Arredondo <br>
-DeAria Little <br>
-Royce Payne <br>
 
 # [GO TO THIS LINK TO PLAY THE GAME](https://princeumbrella.github.io/triviaGameTS/#/)
 # Steps For Set Up
